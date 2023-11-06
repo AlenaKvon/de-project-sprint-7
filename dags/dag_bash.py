@@ -10,7 +10,6 @@ path_city_info = '/user/alenakvon/analytics/project/city_info'
 path_geo_info = '/user/alenakvon/analytics/project/geo_info'
 path_user_recomendations = 'user/alenakvon/analytics/project/user_recomendations'
 date = '2022-06-21'
-#dt = datetime.datetime.strptime(date, '%Y-%m-%d') 
 lag_month = -1 #* dt.month
 city_input_path = "/user/alenakvon/data/spr/geo"
 

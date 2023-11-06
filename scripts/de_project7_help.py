@@ -103,7 +103,7 @@ def get_city_info(df):
     #
     # однодневные посещения не фильтруются
     # фильтруются только непрерывная последовательность
-    # и чтобы взять только крайние города, добавил + условие что след<>пред
+    # и чтобы взять только крайние города, добавила + условие что след<>пред
     df_travels_city = df\
     .withColumn("city_next", F.lead('city').over(Window.partitionBy('event.message_from').orderBy(F.asc("date_ts"),F.asc("event.message_id"))))\
     .fillna('na')\
